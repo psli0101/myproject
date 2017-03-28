@@ -13,16 +13,16 @@ public class Car {
 		this.name = name;
 		this.cc = cc;
 	}
-	
-	public void setMilage(float m){
+
+	public void setMilage(float m) {
 		this.milage = m;
 	}
-	
-	public void addMilage(float m){
+
+	public void addMilage(float m) {
 		milage = milage + m;
 	}
-	
-	public void showMilage(){
-		System.out.println("目前里程數："+this.milage+"km");
+
+	public void showMilage() {
+		System.out.println("目前里程數：" + this.milage + "km");
 	}
 }
