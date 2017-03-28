@@ -1,5 +1,7 @@
 package oo.abstraction;
 
+import oo.test.Test;
+
 public class CarTester {
 
 	public static void main(String[] args) {
@@ -25,6 +27,14 @@ public class CarTester {
 
 		}
 		AA aa = new AA();
+		
+		car1.setMilage(25000);
+		car1.showMilage();
+		car1.addMilage(80);
+		car1.showMilage();
+		
+		Test test = new Test();
+		test.testOne();
 	}
 
 }
