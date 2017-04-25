@@ -9,12 +9,13 @@ public class TesterMid {
 		Scanner s = new Scanner(System.in);
 		ArrayList a = new ArrayList<>();
 		
-		Meal m = new Meal();
+		Meal m = new Meal("C");
 		Ticket t = new Ticket();
 		m.order(s.nextLine(),Integer.parseInt(s.nextLine()));
 		m.order(s.nextLine(),Integer.parseInt(s.nextLine()));
 		m.order(s.nextLine(),Integer.parseInt(s.nextLine()));
 		m.show();
+		
 	}
 
 }

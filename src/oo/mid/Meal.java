@@ -11,6 +11,23 @@ public class Meal {
 	ArrayList<Integer> price = new ArrayList();
 	int allPrice;
 
+	// 以下為訂正
+	float discount;
+	public Meal(String type){
+		switch (type) {
+		case "A":
+			discount = 1f;
+			break;
+		case "B":
+			discount = 0.9f;
+			break;
+		case "C":
+			discount = 0.5f;
+			break;
+		}
+	}
+	// 以上為訂正
+
 	public void order(String food, int price) {
 		allOrder.add(food);
 		this.price.add(price);
@@ -19,9 +36,8 @@ public class Meal {
 
 	public void show() {
 		for (int i = 0; i < allOrder.size(); i++) {
-			System.out.println(allOrder.get(i) + " " + price.get(i)+" doller(s)");
+			System.out.println(allOrder.get(i) + " " + price.get(i) + " doller(s)");
 		}
-		System.out.print("Total: "+allPrice);
+		System.out.print("Total: " + allPrice*discount);
 	}
-
 }
