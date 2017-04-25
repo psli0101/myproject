@@ -7,7 +7,7 @@ public class Student {
 	int chinese;
 	int math;
 
-	public Student() {
+	static {
 		System.out.println("Name\tEnglish\tChinese\tMath");
 	}
 
