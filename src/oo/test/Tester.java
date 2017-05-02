@@ -2,6 +2,8 @@ package oo.test;
 
 import java.util.ArrayList;
 
+import oo.stati.Student;
+
 public class Tester {
 
 	public static void main(String[] args) {
@@ -30,6 +32,26 @@ public class Tester {
 		String data = x.get(1);
 		System.out.println(x);
 		System.out.println(data);
+
+		System.out.println();
+
+		// 2017.05.02
+		Student stu = new Student();
+		stu.setName("TEST");
+		stu.setEnglish(56);
+		stu.setChinese(78);
+		stu.setMath(86);
+		stu.print();
+
+		System.out.println();
+
+		// Test 方法測試
+		Test t = new Test();
+		t.add("A");
+		t.add(456);
+		t.add(789);
+		System.out.println(t.get(0));
+		System.out.println(t.size());
 	}
 
 }
