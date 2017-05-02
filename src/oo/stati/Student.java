@@ -22,6 +22,10 @@ public class Student {
 		this.math = math;
 	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public void setEnglish(int grades) {
 		english = grades;
 	}
@@ -33,16 +37,12 @@ public class Student {
 	public void setMath(int grades) {
 		math = grades;
 	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
+	
 	public void print() {
 		System.out.println(name + "\t" + getScore(english) + "\t" + getScore(chinese) + "\t" + getScore(math));
 	}
 
-	private String getScore(int score) {
+	protected String getScore(int score) {
 		if (score < pass) {
 			return String.valueOf(score) + "*";
 		} else {

@@ -7,7 +7,7 @@ public class Car {
 	int cc;
 	int status;
 	float milage;
-
+	
 	public Car(String brand, String name) {
 		this(brand, name, 0);
 	}

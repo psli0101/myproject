@@ -44,7 +44,7 @@ public class Tester {
 		stu.print();
 
 		System.out.println();
-
+		
 		// Test 方法測試
 		Test t = new Test();
 		t.add("A");
@@ -52,6 +52,13 @@ public class Tester {
 		t.add(789);
 		System.out.println(t.get(0));
 		System.out.println(t.size());
+
+		System.out.println();
+		
+		Test t2 = new Test();
+		t2.add(new Student("A", 58, 62, 76));
+		Student s = t2.get(0);
+		s.print();
 	}
 
 }
