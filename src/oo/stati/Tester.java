@@ -5,7 +5,11 @@ import java.util.ArrayList;
 public class Tester {
 
 	public static void main(String[] args) {
-		//Student stu = new Student();
+		
+		Student s = new Student();
+		System.out.println(s);
+		System.out.println();
+
 		Student stu1 = new Student("A", 58, 62, 76);
 		Student stu2 = new Student("B", 96, 46, 61);
 		Student.pass = 70;

@@ -22,6 +22,14 @@ public class Student {
 		this.math = math;
 	}
 
+	@Override
+	public String toString() {
+		return 
+				"English: " + english + "\n" + 
+				"Chinese: " + chinese + "\n" + 
+				"Math: " + math;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
