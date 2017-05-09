@@ -37,7 +37,7 @@ public class Student {
 	public void setMath(int grades) {
 		math = grades;
 	}
-	
+
 	public void print() {
 		System.out.println(name + "\t" + getScore(english) + "\t" + getScore(chinese) + "\t" + getScore(math));
 	}

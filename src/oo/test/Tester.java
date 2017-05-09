@@ -24,7 +24,7 @@ public class Tester {
 
 		System.out.println();
 
-		ArrayList<String> x = new ArrayList();
+		ArrayList<String> x = new ArrayList<String>();
 		x.add("123");
 		x.add("234");
 		x.add("345");
@@ -44,7 +44,7 @@ public class Tester {
 		stu.print();
 
 		System.out.println();
-		
+
 		// Test 方法測試
 		Test t = new Test();
 		t.add("A");
@@ -54,11 +54,16 @@ public class Tester {
 		System.out.println(t.size());
 
 		System.out.println();
-		
+
+		// 2017.05.09 Test方法測試
+		ArrayList<Object> y = new ArrayList<Object>();
 		Test t2 = new Test();
+		y.add(new Student("A", 58, 62, 76));
 		t2.add(new Student("A", 58, 62, 76));
-		Student s = t2.get(0);
-		s.print();
+		Student s1 = (Student) y.get(0);
+		Student s2 = (Student) t2.get(0);
+		s1.print();
+		s2.print();
 	}
 
 }

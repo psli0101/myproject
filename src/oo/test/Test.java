@@ -9,29 +9,29 @@ public class Test {
 	 */
 
 	// 方法測試
-	private int i; // 紀錄陣列
-	private Object[] object = new Object[10];//暫時用法
+	private int i = 0; // 紀錄陣列
+	private Object[] object = new Object[10];// 暫時用法
 
 	public void add(Object ob) {
+		object[i] = ob;
 		i++;
-		object[i - 1] = ob;
-		//private void ??????
+		// private void ??????
 	}
-	
-	public void set(int i, Object ob){
-		object[i - 1] = ob;
+
+	public void set(int i, Object ob) {
+		object[i] = ob;
 	}
 
 	public Object get(int i) {
 		return object[i];
 	}
-	
-	public int size(){
+
+	public int size() {
 		return this.i;
 	}
-	
-	/* 如何生成可無限增長的陣列?
-	 * 產生新陣列，將舊陣列的東西放進去，刪除舊陣列
+
+	/*
+	 * 如何生成可無限增長的陣列? 產生新陣列，將舊陣列的東西放進去，刪除舊陣列
 	 */
-	//private void ??????
+	// private void ??????
 }
