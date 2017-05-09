@@ -17,6 +17,7 @@ public class Customer {
 
 	public Customer(int cost) {
 		this.cost = cost;
+		this.dis = cost;
 	}
 
 	public void print() {
