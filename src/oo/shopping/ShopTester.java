@@ -30,6 +30,36 @@ public class ShopTester {
 			cust.print();
 		}
 		
+		/* 術入功能設計
+		ArrayList<Customer> list2 = new ArrayList<>();
+		boolean flag = true;
+		do{
+			
+			System.out.print("會員類型：");
+			String type = input.nextLine();
+			switch(type){
+				case "N":
+					System.out.print("消費金額：");
+					list2.add(new Customer(Integer.parseInt(input.nextLine())));
+					break;
+				case "S":
+					System.out.print("消費金額：");
+					list2.add(new SilverCustomer(Integer.parseInt(input.nextLine())));
+					break;
+				case "G":
+					System.out.print("消費金額：");
+					list2.add(new GoldCustomer(Integer.parseInt(input.nextLine())));
+					break;
+				default:
+					flag = false;
+					break;
+			}
+		}while(flag);
+		for (int i = 0; i < list2.size(); i++) {
+			Customer cust = (Customer) list2.get(i);
+			cust.print();
+		}
+		*/
 	}
 
 }
