@@ -7,10 +7,7 @@ public class SilverCustomer extends Customer {
 	public SilverCustomer(int cost) {
 		super(cost);
 		this.dis = (int) (cost * discount);
+		this.type = "[銀]";
 	}
 	
-	@Override
-	public void print() {
-		System.out.println("銀級會員" + "\t" + cost + "\t" + dis + "\t" + money);
-	}
 }

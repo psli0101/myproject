@@ -1,6 +1,7 @@
 package oo.shopping;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /* 
  * 題目：
@@ -13,7 +14,10 @@ import java.util.ArrayList;
 public class ShopTester {
 
 	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 		ArrayList<Object> list = new ArrayList<>();
+		
+		// 輸出功能設計
 		list.add(new Customer(6000));
 		list.add(new SilverCustomer(8000));
 		list.add(new SilverCustomer(10000));
@@ -25,6 +29,8 @@ public class ShopTester {
 			Customer cust = (Customer) list.get(i);
 			cust.print();
 		}
+		
+		
 	}
 
 }

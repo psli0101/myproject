@@ -6,13 +6,8 @@ public class GoldCustomer extends SilverCustomer {
 
 	public GoldCustomer(int cost) {
 		super(cost);
-		this.dis = (int) (cost * discount);
 		this.money = (int) (cost * percent);
+		this.type = "[金]";
 	}
 	
-	@Override
-	public void print() {
-		System.out.println("金級會員" + "\t" + cost + "\t" + dis + "\t" + money);
-	}
-
 }
