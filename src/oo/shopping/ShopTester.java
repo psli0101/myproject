@@ -15,7 +15,7 @@ public class ShopTester {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		ArrayList<Object> list = new ArrayList<>();
+		ArrayList<Customer> list = new ArrayList<>();
 		
 		// 輸出功能設計
 		list.add(new Customer(6000));
@@ -25,8 +25,11 @@ public class ShopTester {
 		list.add(new Customer(2000));
 		list.add(new GoldCustomer(10000));
 		
-		for (int i = 0; i < list.size(); i++) {
+		/*for (int i = 0; i < list.size(); i++) {
 			Customer cust = (Customer) list.get(i);
+			cust.print();
+		}*/
+		for (Customer cust : list) {
 			cust.print();
 		}
 		
