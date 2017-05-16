@@ -9,4 +9,8 @@ public class SilverCustomer extends Customer {
 		this.dis = (int) (cost * discount);
 	}
 	
+	@Override
+	public void print() {
+		System.out.println("銀級會員" + "\t" + cost + "\t" + dis + "\t" + money);
+	}
 }

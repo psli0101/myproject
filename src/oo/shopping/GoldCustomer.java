@@ -9,5 +9,10 @@ public class GoldCustomer extends SilverCustomer {
 		this.dis = (int) (cost * discount);
 		this.money = (int) (cost * percent);
 	}
+	
+	@Override
+	public void print() {
+		System.out.println("金級會員" + "\t" + cost + "\t" + dis + "\t" + money);
+	}
 
 }
