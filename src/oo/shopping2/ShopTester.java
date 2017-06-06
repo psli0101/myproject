@@ -2,12 +2,10 @@ package oo.shopping2;
 
 import java.util.ArrayList;
 
-import oo.shopping.Customer;
-
 public class ShopTester {
 
 	public static void main(String[] args) {
-		ArrayList<NormalCustomer> list = new ArrayList<>();
+		ArrayList<Customer> list = new ArrayList<>();
 		list.add(new NormalCustomer());
 		list.add(new NormalCustomer());
 		list.add(new SilverCustomer());
@@ -15,7 +13,7 @@ public class ShopTester {
 		list.add(new NormalCustomer());
 		list.add(new SilverCustomer());
 		
-		for (NormalCustomer cust : list) {
+		for (Customer cust : list) {
 			cust.print();
 		}
 	}

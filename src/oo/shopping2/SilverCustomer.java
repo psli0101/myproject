@@ -1,6 +1,6 @@
 package oo.shopping2;
 
-public class SilverCustomer extends NormalCustomer {
+public class SilverCustomer extends Customer {
 
 	@Override
 	public void print() {
