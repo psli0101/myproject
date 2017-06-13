@@ -13,6 +13,7 @@ public class ShopTester {
 		list.add(new NormalCustomer());
 		list.add(new SilverCustomer());
 		
+		// for each
 		for (Customer cust : list) {
 			cust.print();
 		}
